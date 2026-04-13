@@ -1,18 +1,8 @@
-# 24-880: AI Agents for Engineers — Project Report Template
-
+# Paper-Template
 ## Getting Started
-1. Import this GitHub repository into Overleaf.
-2. Add a `references.bib` file and include at least one citation with `\cite{}`.
-   - This is required, otherwise BibTeX will emit an error.
-3. Update the title, authors, and content in `main.tex`.
+1. Import GitHub repository into overleaf
+2. Add `references.bib` file and add a citation `\cite{}`.
+    - This step is required otherwise bibtex will emit an error.
 
-## Template Structure
-- **Introduction** — Problem and motivation
-- **Methods** — Approach, models, tools, or algorithms
-- **Results** — Findings, figures, tables, evaluations
-- **Discussion** — Interpretation, limitations, related work
-- **Conclusion** — Summary and future directions
-- **Appendices** — Supplementary material
-
-## References
-`main.tex` is configured to use `references.bib` with the `natbib` package (`plainnat` style).
+### Connecting References
+1. `main.tex` is already set to expect `references.bib`
