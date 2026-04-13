@@ -28,26 +28,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Meta-data block
-%% ---------------
-%% Each author should be given as a separate \author command.
-%%
-%% Corresponding authors should have an e-mail given after the author
-%% name as an \email command. Phone and fax numbers can be given
-%% using \phone and \fax, respectively; this information is optional.
-%%
-%% The affiliation of authors is given after the authors; each
-%% \affiliation command applies to all preceding authors not already
-%% assigned an affiliation.
-%%
-%% The affiliation takes an option argument for the short name.  This
-%% will typically be something like "University of Somewhere".
-%%
-%% The \altaffiliation macro should be used for new address, etc.
-%% On the other hand, \alsoaffiliation is used on a per author basis
-%% when authors are associated with multiple institutions.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \author{FirstName LastName}
 \email{author1@andrew.cmu.edu}
 \affiliation{
@@ -87,8 +67,7 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The abstract environment will automatically gobble the contents
-%% if an abstract is not used by the target journal.
+% Manuscript Content (Please keep this within 2500 words!)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
   This is an example document for the \textsf{achemso} document
@@ -104,9 +83,6 @@
   not, the class will issue an appropriate error.
 \end{abstract}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Start the main part of the manuscript here.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 Introduce the problem and motivation for the project. Provide
 relevant background and state the objectives.
@@ -115,52 +91,23 @@ relevant background and state the objectives.
 Describe the approach, models, tools, or algorithms used.
 
 \section{Results}
-Present the findings of the project, including any figures, tables,
-or quantitative evaluations.
+Present the findings of the project, including any figures, tables, or
+quantitative evaluations.
 
 \section{Discussion}
-Interpret the results, discuss limitations, and compare with related
-work where applicable.
+Interpret the results, discuss limitations, and compare with related work where
+applicable.
 
 \section{Conclusion}
 Summarize the contributions and suggest directions for future work.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The "Acknowledgement" section can be given in all manuscript
-%% classes.  This should be given within the "acknowledgement"
-%% environment, which will make the correct section or running title.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{acknowledgement}
-
-Please use ``The authors thank \ldots'' rather than ``The
-authors would like to thank \ldots''.
-
-The author thanks Mats Dahlgren for version one of \textsf{achemso},
-and Donald Arseneau for the code taken from \textsf{cite} to move
-citations after punctuation. Many users have provided feedback on the
-class, which is reflected in all of the different demonstrations
-shown in this document.
-
-\end{acknowledgement}
-
 \clearpage
-\appendix
-
-% Redefine \thesection to include "Appendix"
-\renewcommand{\thesection}{Appendix \Alph{section}}
-
-\section{First Appendix Title}
-This is the content for the first appendix.
-
-\section{Second Appendix Title}
-This is the content for the second appendix.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The appropriate \bibliography command should be placed here.
 %% Notice that the class file automatically sets \bibliographystyle
 %% and also names the section correctly.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \bibliography{achemso-demo}
 \bibliography{references}
 
 \end{document}
